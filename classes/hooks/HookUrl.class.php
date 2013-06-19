@@ -18,7 +18,7 @@
 class PluginShortprofile_HookUrl extends Hook {
 
     public function RegisterHook() {
-        $this->AddHook('init_action', 'InitAction');
+        $this->AddHook('init_action', 'InitAction',__CLASS__,10000);
     }
 
     public function InitAction() {
